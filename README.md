@@ -138,3 +138,4 @@ export default withEnvlock(
 - **In-memory decryption** — secrets are never written to the filesystem
 - **Works with any runtime** — Node, Python, Go, Rust, Ruby, Java, PHP, .NET, and more
 - **CI-friendly** — set `DOTENV_PRIVATE_KEY_*` directly and envlock skips 1Password automatically
+- **Works with any language**
