@@ -2,6 +2,7 @@ import './App.css'
 import { Hero } from './components/Hero'
 import { HowItWorks } from './components/HowItWorks'
 import { LanguageShowcase } from './components/LanguageShowcase'
+import { ExamplesGrid } from './components/ExamplesGrid'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Hero />
       <HowItWorks />
       <LanguageShowcase />
+      <ExamplesGrid />
     </div>
   )
 }
