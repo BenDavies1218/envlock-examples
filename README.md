@@ -29,10 +29,10 @@ envlock CLI
 
 ## This Repo
 
-| Directory | What it is |
-| --------- | ---------- |
-| [`apps/website/`](apps/website/) | Static showcase site (Vite + React) |
-| [`examples/`](examples/) | Fully runnable minimal examples per language |
+| Directory                        | What it is                                   |
+| -------------------------------- | -------------------------------------------- |
+| [`apps/website/`](apps/website/) | Static showcase site (Vite + React)          |
+| [`examples/`](examples/)         | Fully runnable minimal examples per language |
 
 ## Showcase Site
 
@@ -48,17 +48,17 @@ Open [http://localhost:5173](http://localhost:5173).
 
 Each example is a self-contained minimal app showing how to use envlock with a specific language or framework.
 
-| Example | Language / Framework |
-| ------- | -------------------- |
-| [`examples/node/`](examples/node/) | Node.js (Express) |
-| [`examples/python/`](examples/python/) | Python (Flask) |
-| [`examples/go/`](examples/go/) | Go (net/http) |
-| [`examples/rust/`](examples/rust/) | Rust (Axum) |
-| [`examples/ruby/`](examples/ruby/) | Ruby (Sinatra) |
-| [`examples/java/`](examples/java/) | Java (Spring Boot) |
-| [`examples/php/`](examples/php/) | PHP |
-| [`examples/dotnet/`](examples/dotnet/) | .NET (ASP.NET Core) |
-| [`examples/hardhat/`](examples/hardhat/) | Hardhat (Ethereum) |
+| Example                                  | Language / Framework |
+| ---------------------------------------- | -------------------- |
+| [`examples/node/`](examples/node/)       | Node.js (Express)    |
+| [`examples/python/`](examples/python/)   | Python (Flask)       |
+| [`examples/go/`](examples/go/)           | Go (net/http)        |
+| [`examples/rust/`](examples/rust/)       | Rust (Axum)          |
+| [`examples/ruby/`](examples/ruby/)       | Ruby (Sinatra)       |
+| [`examples/java/`](examples/java/)       | Java (Spring Boot)   |
+| [`examples/php/`](examples/php/)         | PHP                  |
+| [`examples/dotnet/`](examples/dotnet/)   | .NET (ASP.NET Core)  |
+| [`examples/hardhat/`](examples/hardhat/) | Hardhat (Ethereum)   |
 
 Every example follows the same pattern — see any `examples/<lang>/README.md` for setup steps.
 
@@ -83,7 +83,7 @@ op --version  # 2.33.0+
 2. Go to **Settings → Developer**
 3. Enable **Integrate with 1Password CLI**
 
-![1Password CLI setting](./docs/onePassCli.png)
+![1Password CLI setting](./onePassCli.png)
 
 ### Sign in
 
@@ -93,7 +93,7 @@ op signin
 
 With biometric unlock enabled in the desktop app, the CLI authenticates automatically. You can adjust the auto-lock interval so you only need to unlock once per day.
 
-![Auto-lock setting](./docs/autolock_setting.png)
+![Auto-lock setting](./autolock_setting.png)
 
 ## Quick Setup for Any Example
 
@@ -121,14 +121,14 @@ npm install @envlock/next
 
 ```js
 // next.config.js
-import { withEnvlock } from '@envlock/next'
+import { withEnvlock } from "@envlock/next";
 
 export default withEnvlock(
   {},
   {
-    onePasswordEnvId: 'your-env-id',
+    onePasswordEnvId: "your-env-id",
   },
-)
+);
 ```
 
 ## Benefits

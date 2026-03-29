@@ -13,3 +13,21 @@ Minimal net/http server with secrets injected by envlock.
 ```bash
 npx envlock dev
 ```
+
+### Running ad-hoc commands
+
+You can run any command with secrets injected — no config changes needed:
+
+```bash
+npx envlock run <your normal command>
+```
+
+For example:
+
+```bash
+# instead of: go run main.go
+npx envlock run go run main.go
+
+# with environment override
+npx envlock run go run main.go --staging
+```

@@ -14,3 +14,21 @@ Inject `PRIVATE_KEY` and `ALCHEMY_API_URL` at deploy time — keys never touch d
 npx envlock compile   # compile contracts
 npx envlock deploy    # deploy to sepolia
 ```
+
+### Running ad-hoc commands
+
+You can run any command with secrets injected — no config changes needed:
+
+```bash
+npx envlock run <your normal command>
+```
+
+For example:
+
+```bash
+# instead of: npx hardhat run scripts/deploy.js --network mainnet
+npx envlock run npx hardhat run scripts/deploy.js --network mainnet
+
+# with environment override
+npx envlock run npx hardhat run scripts/deploy.js --network mainnet --staging
+```

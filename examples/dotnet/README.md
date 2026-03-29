@@ -14,3 +14,21 @@ Minimal ASP.NET Core minimal API with secrets injected by envlock.
 ```bash
 npx envlock dev
 ```
+
+### Running ad-hoc commands
+
+You can run any command with secrets injected — no config changes needed:
+
+```bash
+npx envlock run <your normal command>
+```
+
+For example:
+
+```bash
+# instead of: dotnet run
+npx envlock run dotnet run
+
+# with environment override
+npx envlock run dotnet run --staging
+```

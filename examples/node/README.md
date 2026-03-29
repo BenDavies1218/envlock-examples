@@ -15,3 +15,21 @@ npm run dev
 # or
 npx envlock dev
 ```
+
+### Running ad-hoc commands
+
+You can run any command with secrets injected — no config changes needed:
+
+```bash
+npx envlock run <your normal command>
+```
+
+For example:
+
+```bash
+# instead of: node server.js
+npx envlock run node server.js --port 4000
+
+# with environment override
+npx envlock run node server.js --staging
+```

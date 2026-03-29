@@ -14,3 +14,21 @@ Minimal Sinatra app with secrets injected by envlock.
 ```bash
 npx envlock dev
 ```
+
+### Running ad-hoc commands
+
+You can run any command with secrets injected — no config changes needed:
+
+```bash
+npx envlock run <your normal command>
+```
+
+For example:
+
+```bash
+# instead of: bundle exec ruby app.rb
+npx envlock run bundle exec ruby app.rb
+
+# with environment override
+npx envlock run bundle exec ruby app.rb --staging
+```
