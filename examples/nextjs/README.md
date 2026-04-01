@@ -105,14 +105,14 @@ npx @dotenvx/dotenvx encrypt -f .env.development --stdout
 
 ```bash
 pnpm dev                    # uses .env.development (default)
-pnpm dev -- --staging       # uses .env.staging
-pnpm dev -- --production    # uses .env.production
+pnpm dev --staging       # uses .env.staging
+pnpm dev --production    # uses .env.production
 
 pnpm build                  # uses .env.development
-pnpm build -- --staging
-pnpm build -- --production
+pnpm build --staging
+pnpm build --production
 
-pnpm start -- --production  # uses .env.production
+pnpm start --production  # uses .env.production
 ```
 
 envlock injects secrets from 1Password and decrypts the appropriate `.env.*` file before starting Next.js. You'll see:
